@@ -1,6 +1,8 @@
 int factorial(int n){
-	if(n == 0){
-		return 1;
+	int f = 1;
+	int i;
+	for(i = 0 ; i < n ; i++){
+		f = f * i;
 	}
-	return n*f(n-1);
+	return f;
 }
